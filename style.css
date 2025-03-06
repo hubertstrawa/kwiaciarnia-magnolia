@@ -34,7 +34,7 @@ body {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
@@ -44,10 +44,16 @@ body {
   /* align-self: flex-start;
   margin-top: 15%; */
   position: absolute;
-  top: 10%;
+  top: 20px;
   z-index: 100;
   color: #f9f7f6;
   padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    top: 15%;
+  }
 }
 
 .subheader {
@@ -57,8 +63,10 @@ body {
   text-transform: uppercase;
 }
 
-.eapps-widget {
-  display: none;
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.8rem;
 }
 
 .night {
